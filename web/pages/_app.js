@@ -21,6 +21,11 @@ const siteConfigQuery = `
   `;
 
 const MyApp = ({ Component, pageProps, config }) => {
+  console.log("MyApp");
+  console.log("pageProps", pageProps);
+  console.log("-------------------");
+  console.log("config", config);
+  console.log("-------------------");
   return <Component {...pageProps} {...config} />;
 };
 
