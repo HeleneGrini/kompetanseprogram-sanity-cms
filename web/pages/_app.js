@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps, config }) => {
 MyApp.getInitialProps = async (appContext) => {
   let pageProps = await App.getInitialProps(appContext);
   const config = await client.fetch(siteConfigQuery);
-
+  console.log("getInitialProps", config, pageProps);
   return { ...pageProps, config };
 };
 export default MyApp;
